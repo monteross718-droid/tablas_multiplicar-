@@ -153,6 +153,40 @@ footer {
     overflow-wrap: anywhere;
 }
 
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.campo label {
+    color: #b9cce6;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.entrada {
+    width: 100%;
+    min-height: 48px;
+    padding: 14px 16px;
+    border: 1px solid #293b55;
+    border-radius: 10px;
+    background: #101c2e;
+    color: #eaf1ff;
+    font: inherit;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.entrada::placeholder {
+    color: #8194ae;
+}
+
+.entrada:focus {
+    border-color: #61d4ff;
+    box-shadow: 0 0 0 3px #61d4ff20;
+}
 /* Diseño para celulares */
 @media (max-width: 480px) {
     body {

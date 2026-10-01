@@ -1,10 +1,12 @@
-function generarTablas(){
+function generarTablas() {
     let contenedor = document.getElementById("contenedorTabla");
-    contenedor.innerHTML = "<tr><td colspan='2'><h1>PROBANDO</h1></td></tr>";
+    let numero = Number(document.getElementById("txtNumero").value);
+    let contenido = "";
 
-    let contenido ="";
-    for (let i=1; i<=10; i++){
-        contenido += "<tr><td>5 × " + i + "</td><td>" + (5 * i) + "</td></tr>";
+    for (let i = 1; i <= 10; i++) {
+        contenido += "<tr><td>" + numero + " × " + i +
+                     "</td><td>" + (numero * i) + "</td></tr>";
     }
+
     contenedor.innerHTML = contenido;
-;}
+}
