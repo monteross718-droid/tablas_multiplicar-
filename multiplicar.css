@@ -187,6 +187,12 @@ footer {
     border-color: #61d4ff;
     box-shadow: 0 0 0 3px #61d4ff20;
 }
+
+.ayuda {
+    color: #a9b9cf;
+    font-size: 13px;
+    line-height: 1.6;
+}
 /* Diseño para celulares */
 @media (max-width: 480px) {
     body {

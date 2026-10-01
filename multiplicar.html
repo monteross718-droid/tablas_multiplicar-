@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla del 3 | Erik Monteros</title>
+    <title>Generador de tablas | Erik Monteros</title>
     <link rel="stylesheet" href="multiplicar.css">
     <script src="multiplicar.js" defer></script>
 </head>
@@ -11,25 +11,32 @@
     <main class="contenedor">
         <header class="barra">
             <span class="marca">EM<span class="punto">.</span></span>
-            <button type="button" class="boton" onclick="generarTablas()">PROBAR</button>
+            <button type="button" class="boton" onclick="generarTablas()">GENERAR TABLA</button>
 
-    <div class="campo">
-        <label for="txtNumero">Número de la tabla</label>
-        <input
-            type="text"
-            id="txtNumero"
-            class="entrada"
-            placeholder="Ejemplo: 3"
-            inputmode="numeric"
-            autocomplete="off"
-    >   
+  <div class="campo">
+    <label for="txtNumero">¿Qué tabla quieres generar?</label>
+
+    <input
+        type="text"
+        id="txtNumero"
+        class="entrada"
+        placeholder="Escribe un número, por ejemplo: 8"
+        inputmode="numeric"
+        autocomplete="off"
+        aria-describedby="ayudaNumero"
+    >
+
+    <small id="ayudaNumero" class="ayuda">
+        Escribe un número y pulsa GENERAR TABLA.
+        Verás sus multiplicaciones del 1 al 10.
+    </small>
     </div>
 
         <section class="tarjeta" aria-labelledby="titulo">
             <div class="encabezado">
-                <span class="etiqueta">MATEMÁTICA · TABLAS</span>
-                <h1 id="titulo">Tabla del <span>3</span></h1>
-                <p>Una forma clara de aprender a multiplicar.</p>
+                <span class="etiqueta">MATEMÁTICA · APRENDIZAJE</span>
+                <h1 id="titulo">Generador de <span>tablas</span></h1>
+                <p>Consulta tus tablas de multiplicar.Para ver otra, cambia el número y vuelve a generar.</p>
             </div>
 
             <table>
